@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/css/menu.css">
+  <link rel="stylesheet" href="./assets/css/first.css">
+  <link rel="stylesheet" href="./assets/css/trending.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho container">
+      <img src="./assets/images/logo.svg" alt="website's logo" class="logo">
+      <div class="header__menu">
+        <span onclick="closeNav()"><img src="./assets/images/icon-menu-close.svg" alt="X" class="mobile--close-menu"></span>
+        <a href="#" class="header__menu--link">Home</a>
+        <a href="#" class="header__menu--link">New</a>
+        <a href="#" class="header__menu--link">Popular</a>
+        <a href="#" class="header__menu--link">Trending</a>
+        <a href="#" class="header__menu--link">Categories</a>
+      </div>
+      <span onclick="openNav()"><img src="./assets/images/icon-menu.svg" alt="hamburger menu" class="mobile--menu"></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="first container">
+      <img src="./assets/images/image-web-3-mobile.jpg" alt="abstract colored image" class="first__image--mobile">
+      <img src="./assets/images/image-web-3-desktop.jpg" alt="abstract colored image" class="first__image--desktop">
+
+      <div class="info">
+        <h2 class="info__title">The Bright Future of Web 3.0?</h2>
+        <div class="info__block">
+          <p class="info__text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+            But is it really fulfilling its promise?</p>
+          <button class="info__button">Read  more</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="card__title">New</h3>
+
+        <div class="card__block text__border">
+          <h4 class="card__subtitle">Hydrogen VS Electric Cars</h4>
+          <p class="card__text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="card__block text__border">
+          <h4 class="card__subtitle">The Downsides of AI Artistry</h4>
+          <p class="card__text">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="card__block">
+          <h4 class="card__subtitle">Is VC Funding Drying Up?</h4>
+          <p class="card__text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="trending container">
+      <div class="trending__item">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="image of retro pc" class="item__image">
+        <div class="item__info">
+          <p class="item__info--rank">01</p>
+          <h3 class="item__info--title">Reviving Retro PCs</h3>
+          <p class="item__info--desc">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="trending__item">
+        <img src="./assets/images/image-top-laptops.jpg" alt="close caption of a keyboard" class="item__image">
+        <div class="item__info">
+          <p class="item__info--rank">02</p>
+          <h3 class="item__info--title">Top 10 Laptops of 2022</h3>
+          <p class="item__info--desc">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="trending__item">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="man throwing a playstation controller to the air" class="item__image">
+        <div class="item__info">
+          <p class="item__info--rank">03</p>
+          <h3 class="item__info--title">The Growth of Gaming</h3>
+          <p class="item__info--desc">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <hr class="container">
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    <br> Coded by <a href="https://github.com/JonasTamada">Jonas Tamada</a>.
+  </footer>
+
+  <script src="./assets/js/menu.js"></script>
+</body>
+</html>

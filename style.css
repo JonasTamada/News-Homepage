@@ -1,0 +1,29 @@
+:root {
+
+    --laranja: hsl(35, 77%, 62%);
+    --vermelho: hsl(5, 85%, 63%);
+    --branco: hsl(36, 100%, 99%);
+    --azul-claro: hsl(233, 8%, 79%);
+    --azul: hsl(236, 13%, 42%);
+    --azul-escuro: hsl(240, 100%, 5%);
+}
+
+html {
+
+    font-family: 'Inter', sans-serif;
+    background-color: var(--branco);
+    font-size: 15px;
+}
+
+.container {
+
+    margin: 2.5em 1em;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+
+        margin: 4em 7em;
+    }
+}
